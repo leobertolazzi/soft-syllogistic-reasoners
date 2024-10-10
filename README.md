@@ -16,13 +16,12 @@
 If you find this work helpful, please cite our paper as:
 
 ```
-@misc{bertolazzi2024systematicanalysislargelanguage,
+@inproceedings{bertolazzi2024systematicanalysislargelanguage,
       title={A Systematic Analysis of Large Language Models as Soft Reasoners: The Case of Syllogistic Inferences}, 
       author={Leonardo Bertolazzi and Albert Gatt and Raffaella Bernardi},
       year={2024},
-      eprint={2406.11341},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2406.11341}, 
+      booktitle={Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing},
+      publisher={Association for Computational Linguistics},
+      url={https://.org/abs/2406.11341}, 
 }
 ```
