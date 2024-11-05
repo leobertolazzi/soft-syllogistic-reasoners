@@ -1,0 +1,33 @@
+Model = Pythia-410m ZS-CoT
+Chi2ContingencyResult(statistic=14.873055096703723, pvalue=0.0001149938780098664)
+--------------------
+Model = Pythia-1.4b ZS-CoT
+Chi2ContingencyResult(statistic=16.350086405529954, pvalue=5.2653761795926714e-05)
+--------------------
+Model = Pythia-1.4b-inst ZS-CoT
+Chi2ContingencyResult(statistic=3.165607471642114, pvalue=0.07520445305969646)
+--------------------
+Model = LLaMA-2-7b ZS-CoT
+Chi2ContingencyResult(statistic=7.5190363254790284, pvalue=0.006105033164160392)
+--------------------
+Model = LLaMA-2-7b-inst ZS-CoT
+Chi2ContingencyResult(statistic=4.960820079045012, pvalue=0.025927908402362955)
+--------------------
+Model = LLaMA-3-8b ZS-CoT
+Chi2ContingencyResult(statistic=56.46000408579284, pvalue=5.735318178968731e-14)
+--------------------
+Model = LLaMA-3-8b-inst ZS-CoT
+Chi2ContingencyResult(statistic=10.971440167613185, pvalue=0.0009252682471435516)
+--------------------
+Model = LLaMA-2-13b-inst ZS-CoT
+Chi2ContingencyResult(statistic=3.526586806219621, pvalue=0.06039199045039202)
+--------------------
+Model = LLaMA-2-13b ZS-CoT
+Chi2ContingencyResult(statistic=8.421110081393362, pvalue=0.0037088927983768287)
+--------------------
+Model = LLaMA-3-70b ZS-CoT
+Chi2ContingencyResult(statistic=18.913635546267557, pvalue=1.3677157369857471e-05)
+--------------------
+Model = LLaMA-3-70b-inst ZS-CoT
+Chi2ContingencyResult(statistic=66.95558625735384, pvalue=2.7769339312113967e-16)
+--------------------

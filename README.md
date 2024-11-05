@@ -4,24 +4,213 @@
 
 ## Table of Contents
 - [Setup](#setup)
-- [Reproduce results](#results)
+- [Reproduce Experiment](#reproduce-experiment)
 - [Citation](#citation)
 
 ## Setup
 
-## Reproduce results
+### Environment Setup
+
+1. Create and activate a new conda environment:
+```
+conda create --name syllogistic_reasoning python=3.9.18 pip
+conda activate syllogistic_reasoning
+```
+
+2. Install the required packages:
+```
+pip install -r requirements.txt
+```
+
+### Config File
+
+Many required arguments for saving model weights and performing fine-tuning are stored in `config.yaml`.
+
+Most parameters have the values used in the experiment; however, some need to be specified.
+
+#### Required Parameters
+- `cache_dir`: Path where model weights will be stored
+- `personal_dir`: Your working directory path
+- `hf_key`: Your HuggingFace API key (required for accessing LLaMA models)
+
+## Reproduce Experiment
+
+### Syllogistic Reasoning Dataset Generator
+
+The `dataset.py` script generates syllogistic reasoning datasets with several options:
+
+1. Real-word syllogisms:
+  - Believable conclusions (true in the real world)
+  - Unbelievable conclusions (false in the real world)
+
+2. Pseudo-word syllogisms:
+  - Variable number of premises (2, 3, or 4)
+
+#### Usage
+
+```python
+from dataset import get_dataset
+
+# Generate different types of datasets
+believable_dataset = get_dataset(train_epochs=100, val_epochs=1, test_data_type="believable")
+unbelievable_dataset = get_dataset(train_epochs=100, val_epochs=1, test_data_type="unbelievable")
+two_premises = get_dataset(train_epochs=100, val_epochs=1, test_data_type="2_premises")
+three_premises = get_dataset(train_epochs=100, val_epochs=1, test_data_type="3_premises")
+four_premises = get_dataset(train_epochs=100, val_epochs=1, test_data_type="4_premises")
+```
+
+Each dataset contains three splits:
+- train: Training examples
+- val: Validation examples
+- test: Test examples
+
+#### Data Directory Structure
+
+The dataset generator scripts expect specific directory structures and files. Here is the organization of the data directory:
+
+```
+data/
+├── schemes/            # Contains logical schemes for syllogisms
+├── vocabulary/         # Stores vocabulary files for term generation
+└── test/              # Generated test datasets
+```
+
+The generator will:
+1. Read vocabulary from `vocabulary/`
+2. Create syllogism schemes in `schemes/` 
+3. Generate test datasets in `test/`
+
+The full directory structure after generation is shown below:
+
+```
+data/
+├── schemes/
+│   ├── schemes_syllogisms.txt       # Base syllogism schemes
+│   ├── schemes_syllogisms_2.txt     # Schemes for 2 premises (at least 1 premise with mood A)
+│   ├── schemes_syllogisms_3.txt     # Schemes for 3 premises (at least 1 premise with mood A)
+│   └── schemes_syllogisms_4.txt     # Schemes for 4 premises (at least 1 premise with mood A)
+├── vocabulary/
+│   ├── syllowords_believable.json   # Words for believable syllogisms
+│   ├── syllowords_unbelievable.json # Words for unbelievable syllogisms
+│   └── gibberish.json               # Gibberish vocabulary
+└── test/
+    ├── syllogisms_believable.jsonl     # Generated test data
+    ├── syllogisms_unbelievable.jsonl
+    ├── syllogisms_2_premises.jsonl
+    ├── syllogisms_3_premises.jsonl
+    └── syllogisms_4_premises.jsonl
+
+```
+
+### Eval Models
+
+Model can be evaluated on the datasets using `eval.py`. The script accepts several parameters:
+
+#### Model Selection
+
+```bash
+--model [model_name]
+```
+Choose from various model families and sizes:
+- Pythia models: `pythia-160m`, `pythia-410m`, `pythia-1.4b`, `pythia-1.4b-inst`
+- LLaMA-2 models: `llama-2-7b`, `llama-2-7b-chat`, `llama-2-13b`, `llama-2-13b-chat`
+- LLaMA-3 models: `llama-3-8b`, `llama-3-8b-chat`, `llama-3-70b`, `llama-3-70b-chat`
+
+#### Test Data
+
+```bash
+--test_data [data_type]
+```
+Available datasets:
+- `believable`: Syllogisms with real words and believable conclusions
+- `unbelievable`: Syllogisms with real words and unbelievable conclusions
+- `2_premises`, `3_premises`, `4_premises` : Syllogisms with pseudo-words and variable number of premises 
+
+#### Evaluation Settings
+```bash
+--eval_setting [setting]
+```
+Evaluation modes:
+- `zero-shot-cot`: Zero-shot chain of thought
+- `icl-out`: In-context learning (different type of syllogism)
+- `icl-in`: In-context learning (same type of syllogism)
+- `sft`: Supervised fine-tuning
+
+#### Additional Parameters
+- `--run_id`: Specify run identifier (default: 1)
+- `--attention`: Choose attention mechanism (`sdpa`, `flash_attention_2`, or `eager`)
+- `--log`: Toggle logging
+- `--login`: Toggle login requirement for gated hf models
+
+#### Saving Directory
+
+Results from a single run of `eval.py` are added as a row in the `results/{test_data}.csv`.
+
+
+#### Example Usage
+```bash
+python eval.py --model pythia-1.4b --test_data believable --eval_setting zero-shot-cot --attention eager --log
+```
+
+This command evaluates the Pythia-1.4B model on the believable set using zero-shot chain of thought reasoning, with eager attention and logging enabled.
+
+### Fine-tuning Models
+
+To obtain the SFT version of a model, use the `train.py` script. The script accepts the following parameters:
+
+#### Model Selection
+
+```bash
+--model [model_name]
+```
+Choose from available models:
+- `pythia-1.4b`
+- `llama-3-8b`
+
+#### Additional Parameters
+- `--run_id`: Specify run identifier (default: 1)
+
+
+### Analysis of Results
+
+The results obtained using `eval.py` can be analised to reproduce the results of the paper using the `analysis.py` scripts.
+
+#### Overview
+
+The analysis covers multiple aspects of model performance:
+- Overall accuracy for conclusion believability and number of premises
+- Correlation with human performance on valid syllogisms
+- Consistency and completeness of responses 
+- Predictability of model answers through cognitive heuristics
+- Accuracy when considering only the top-1 answer. 
+
+#### Output Formats
+
+Results are presented in several formats:
+- Formatted tables using PrettyTable for numeric results
+- Heatmaps for heuristic analysis
+- Scatter plots for coherence vs completeness comparison
+
+Images are saved in the `results/images/` directory
+
+#### Example Usage
+```bash
+python analysis.py
+```
 
 ## Citation
 
 If you find this work helpful, please cite our paper as:
 
 ```
-@inproceedings{bertolazzi2024systematicanalysislargelanguage,
-      title={A Systematic Analysis of Large Language Models as Soft Reasoners: The Case of Syllogistic Inferences}, 
-      author={Leonardo Bertolazzi and Albert Gatt and Raffaella Bernardi},
-      year={2024},
-      booktitle={Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing},
-      publisher={Association for Computational Linguistics},
-      url={https://.org/abs/2406.11341}, 
+@inproceedings{
+  bertolazzi2024systematicanalysislargelanguage,
+  title={A Systematic Analysis of Large Language Models as Soft Reasoners: The Case of Syllogistic Inferences},
+  author={Leonardo Bertolazzi and Albert Gatt and Raffaella Bernardi},
+  booktitle={The 2024 Conference on Empirical Methods in Natural Language Processing},
+  year={2024},
+  url={https://openreview.net/forum?id=HClGktRSbC}
 }
 ```
+
+

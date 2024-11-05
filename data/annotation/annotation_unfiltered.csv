@@ -1,0 +1,584 @@
+sentence,model_answer
+Some felines are not dogs,True
+No warships are planes,True
+Some winged animals are not cows,True
+All trees are animals,False
+Some dogs are not felines,True
+No chickadees are cows,True
+Some daisies are flowers,True
+No labradors are dogs,False
+All watercrafts are warships,False
+All birds are birdies,False
+Some watercrafts are not planes,True
+Some boeings are not aircrafts,False
+All trees are evergreens,False
+All birds are chickadees,False
+All cats are birds,False
+Some pines are trees,True
+All cattles are mammals,True
+Some cars are warships,False
+No siameses are cats,False
+Some animals are mortals,True
+No cruisers are watercrafts,False
+No cruisers are planes,True
+Some trees are pines,True
+No planes are watercrafts,True
+All cows are chickadees,False
+No pines are evergreens,False
+No planes are cruisers,True
+All kitties are cats,True
+All battleships are watercrafts,True
+Some kitties are felines,True
+Some aircrafts are not warships,True
+Some watercrafts are cars,False
+All daisies are plants,True
+Some cats are canines,False
+Some winged animals are cows,False
+All cruisers are warships,True
+No warships are cruisers,False
+Some creatures are mortals,True
+Some planes are aircrafts,True
+Some birds are mammals,False
+All humans are animals,True
+Some cars are vehicles,True
+Some dogs are not cats,True
+All winged animals are birds,True
+All canines are pooches,True
+Some trees are not pines,True
+Some cats are dogs,False
+All warships are cruisers,False
+All birds are cows,False
+No humans are animals,False
+All birds are winged animals,True
+Some anguses are cows,False
+All cows are dogs,False
+Some cats are kitties,True
+Some animals are not flowers,True
+No evergreens are animals,True
+Some cruisers are not warships,True
+All cats are labradors,False
+No animals are plants,True
+No canines are dogs,False
+Some vehicles are mortals,False
+Some canines are dogs,True
+Some vehicles are not sedans,True
+Some planes are not boeings,True
+All aircrafts are airplanes,False
+All trees are flowers,False
+Some mortals are creatures,True
+Some plants are blossoms,True
+Some sedans are warships,False
+No dogs are cows,True
+All labradors are cats,False
+Some anguses are mammals,True
+All birds are mammals,False
+No sedans are cars,False
+No birds are mammals,True
+Some cats are birds,False
+Some warships are not planes,True
+No boeings are planes,False
+All humans are flowers,False
+All sedans are vehicles,True
+All flowers are evergreens,False
+Some boeings are aircrafts,True
+All kitties are felines,True
+No mortals are cars,True
+Some watercrafts are warships,True
+Some birds are not cows,True
+Some animals are flowers,False
+No cats are canines,True
+Some evergreens are perennials,True
+All cats are kitties,True
+No plants are flowers,False
+No animals are vehicles,True
+Some mortals are vehicles,False
+Some anguses are not cows,True
+Some watercrafts are not cruisers,True
+Some planes are warships,False
+Some evergreens are trees,True
+No cows are birds,True
+All felines are siameses,False
+Some cars are not sedans,True
+No animals are sedans,True
+Some boeings are planes,True
+All cars are sedans,False
+Some canines are pooches,True
+Some birdies are birds,True
+All evergreens are flowers,False
+Some chickadees are not birds,False
+Some flowers are not plants,False
+Some aircrafts are planes,True
+Some cars are animals,False
+Some felines are not siameses,True
+Some felines are not cats,True
+Some aircrafts are boeings,True
+No trees are pines,False
+Some birds are winged animals,True
+Some flowers are not trees,True
+Some dogs are not siameses,True
+Some canines are not cats,True
+Some birds are not cats,True
+All plants are daisies,False
+Some perennials are evergreens,True
+Some animals are plants,False
+Some daisies are not flowers,False
+No warships are sedans,True
+Some evergreens are not plants,False
+All canines are cows,False
+All evergreens are trees,True
+Some pines are not evergreens,False
+Some mammals are birds,False
+All mortals are creatures,True
+All dogs are canines,True
+No cars are animals,True
+All cruisers are planes,False
+All chickadees are winged animals,True
+Some mammals are anguses,False
+All boeings are warships,False
+All cows are birds,False
+All cows are mammals,True
+Some planes are airplanes,True
+Some warships are not watercrafts,False
+Some cars are watercrafts,False
+Some winged animals are cats,False
+All birds are anguses,False
+Some animals are not mortals,True
+No plants are evergreens,False
+No vehicles are sedans,False
+Some warships are not cars,True
+All cats are siameses,False
+All cows are winged animals,False
+Some airplanes are planes,True
+All plants are flowers,False
+All mammals are cattles,False
+Some sedans are cars,True
+No mortals are vehicles,True
+All animals are cars,False
+All animals are trees,False
+Some cats are not winged animals,True
+Some humans are not mortals,False
+Some cows are not anguses,True
+No cows are anguses,True
+All flowers are animals,False
+All animals are sedans,False
+All sedans are animals,False
+Some cattles are cows,True
+Some animals are trees,False
+Some flowers are daisies,True
+Some chickadees are winged animals,True
+Some cows are not dogs,True
+No evergreens are pines,False
+All animals are evergreens,False
+Some labradors are dogs,True
+Some creatures are animals,True
+All mortals are animals,True
+All felines are dogs,False
+Some flowers are humans,False
+No cows are winged animals,True
+Some watercrafts are not warships,True
+Some animals are not plants,True
+Some plants are not evergreens,True
+All watercrafts are cruisers,False
+All sedans are warships,False
+Some battleships are watercrafts,True
+All cars are mortals,False
+Some warships are sedans,False
+Some pooches are dogs,True
+All plants are animals,False
+Some birds are not anguses,True
+Some trees are not flowers,True
+All evergreens are plants,True
+No cars are warships,True
+Some cows are winged animals,False
+Some winged animals are not cats,True
+All warships are cars,False
+All anguses are cows,False
+All winged animals are cows,False
+All sedans are cars,True
+No daisies are flowers,False
+No winged animals are cows,True
+All aircrafts are warships,False
+Some chickadees are birds,True
+Some pines are not trees,False
+Some warships are cruisers,True
+Some birds are cats,False
+No watercrafts are warships,True
+Some warships are not sedans,True
+All cats are canines,False
+Some winged animals are birds,True
+Some winged animals are not birds,True
+All cars are warships,False
+No planes are boeings,False
+Some flowers are not evergreens,True
+Some vehicles are not cars,True
+Some dogs are cows,False
+Some automobiles are vehicles,True
+No sedans are warships,True
+All evergreens are perennials,True
+No birds are anguses,True
+Some perennials are trees,True
+All plants are evergreens,False
+All dogs are cats,False
+Some trees are not evergreens,True
+Some cats are not canines,True
+All trees are pines,False
+All vehicles are animals,False
+No cows are chickadees,True
+All vehicles are automobiles,False
+Some evergreens are not pines,True
+All warships are watercrafts,True
+Some warships are battleships,True
+No cats are siameses,True
+All animals are creatures,True
+All animals are flowers,False
+Some cows are birds,False
+Some cats are not siameses,True
+Some chickadees are not winged animals,False
+Some cats are felines,True
+Some labradors are canines,True
+No winged animals are birds,False
+No labradors are cats,True
+Some flowers are plants,True
+No winged animals are chickadees,True
+Some sedans are not warships,True
+Some canines are not labradors,True
+Some evergreens are animals,False
+Some dogs are felines,False
+Some birdies are winged animals,True
+No canines are labradors,False
+All perennials are evergreens,False
+All cars are automobiles,True
+Some felines are dogs,False
+Some plants are not daisies,True
+Some flowers are blossoms,True
+No dogs are labradors,False
+Some cars are sedans,True
+Some planes are boeings,True
+Some battleships are warships,True
+Some blossoms are flowers,True
+Some watercrafts are cruisers,True
+All siameses are cats,True
+All boeings are planes,True
+All planes are cruisers,False
+Some plants are daisies,True
+No vehicles are mortals,True
+Some vehicles are sedans,True
+All felines are cats,True
+All dogs are felines,False
+No cruisers are warships,True
+Some trees are not animals,True
+No plants are animals,True
+Some winged animals are birdies,False
+No watercrafts are cruisers,False
+Some boeings are not planes,False
+No dogs are cats,True
+All creatures are mortals,False
+Some felines are cats,True
+All humans are mortals,True
+Some cows are not canines,True
+All winged animals are cats,False
+No anguses are mammals,False
+All watercrafts are cars,False
+Some warships are aircrafts,False
+Some mortals are not humans,True
+All vehicles are mortals,False
+All boeings are aircrafts,True
+Some dogs are canines,True
+No flowers are trees,True
+No flowers are animals,True
+All pooches are canines,True
+All automobiles are cars,True
+No cats are dogs,True
+No felines are dogs,True
+No mammals are cows,True
+No mortals are animals,False
+Some winged animals are chickadees,True
+No cars are mortals,True
+Some labradors are not canines,False
+Some planes are watercrafts,False
+Some flowers are animals,False
+Some plants are evergreens,True
+Some dogs are cats,False
+No evergreens are trees,False
+Some mortals are humans,True
+All dogs are cows,False
+Some cruisers are not watercrafts,False
+Some cows are mammals,True
+No canines are cats,True
+Some aircrafts are airplanes,True
+Some pooches are canines,True
+All mammals are birds,False
+No humans are flowers,True
+No aircrafts are planes,False
+No mortals are humans,False
+Some birds are cows,False
+All daisies are flowers,True
+Some mammals are not cows,True
+All labradors are canines,True
+Some cows are anguses,False
+No aircrafts are warships,True
+All evergreens are animals,False
+All watercrafts are planes,False
+Some trees are flowers,False
+Some plants are flowers,True
+No chickadees are birds,False
+Some mortals are not vehicles,True
+No cows are canines,True
+Some warships are planes,False
+Some planes are not warships,True
+All animals are vehicles,False
+Some cruisers are watercrafts,True
+Some flowers are trees,False
+No flowers are daisies,True
+No warships are cars,True
+No boeings are aircrafts,False
+Some cars are not mortals,True
+All planes are airplanes,True
+No cats are labradors,True
+All cruisers are watercrafts,True
+All airplanes are planes,True
+Some cars are automobiles,True
+All mammals are anguses,False
+Some siameses are not cats,False
+Some siameses are cats,True
+Some animals are humans,False
+Some pines are evergreens,True
+All flowers are daisies,False
+Some plants are not animals,True
+Some animals are not vehicles,True
+Some cars are not watercrafts,True
+No planes are aircrafts,False
+Some humans are mortals,True
+No cats are winged animals,True
+Some sedans are not animals,True
+Some canines are cows,False
+All dogs are siameses,False
+Some dogs are not canines,False
+Some evergreens are not flowers,True
+Some anguses are not birds,True
+Some cars are not warships,True
+Some cows are not winged animals,True
+No trees are flowers,True
+Some cows are not chickadees,True
+All animals are mortals,False
+Some warships are watercrafts,True
+No animals are mortals,False
+Some siameses are not dogs,True
+All dogs are labradors,False
+All canines are dogs,True
+All warships are planes,False
+No dogs are canines,False
+No flowers are evergreens,True
+No animals are humans,True
+Some flowers are not humans,True
+All perennials are trees,False
+Some animals are not evergreens,True
+Some evergreens are not animals,True
+All warships are sedans,False
+Some dogs are not labradors,True
+Some mammals are cows,True
+All flowers are blossoms,False
+All siameses are felines,True
+Some mammals are not anguses,True
+No evergreens are plants,False
+Some flowers are evergreens,False
+All aircrafts are boeings,False
+Some automobiles are cars,True
+All flowers are plants,True
+No mammals are anguses,True
+Some birds are not winged animals,False
+Some humans are not animals,False
+No animals are trees,True
+Some sedans are vehicles,True
+No siameses are felines,False
+Some warships are not aircrafts,True
+Some canines are labradors,True
+Some animals are not cars,True
+All cats are dogs,False
+All cars are vehicles,True
+Some warships are not boeings,True
+Some cars are not vehicles,False
+Some vehicles are not mortals,True
+All planes are warships,False
+No animals are cars,True
+All aircrafts are planes,True
+All flowers are humans,False
+No anguses are cows,True
+Some animals are creatures,True
+No trees are evergreens,False
+All cows are cattles,False
+Some animals are not trees,True
+No sedans are animals,True
+Some siameses are felines,True
+No vehicles are cars,False
+No birds are chickadees,True
+No dogs are siameses,True
+All planes are aircrafts,True
+No boeings are warships,True
+Some cows are dogs,False
+Some cars are not animals,True
+Some watercrafts are battleships,True
+All winged animals are chickadees,False
+All animals are humans,False
+Some cats are winged animals,False
+Some birds are not chickadees,True
+All planes are boeings,False
+All labradors are dogs,True
+Some cows are canines,False
+Some planes are not aircrafts,False
+Some airplanes are aircrafts,True
+All mortals are vehicles,False
+No canines are cows,True
+Some labradors are not dogs,False
+No animals are evergreens,False
+All watercrafts are battleships,False
+All anguses are birds,False
+All cows are anguses,False
+All cats are winged animals,False
+All birdies are birds,True
+Some animals are not humans,True
+No cows are mammals,False
+All cars are animals,False
+All planes are watercrafts,False
+Some plants are animals,False
+Some animals are vehicles,False
+Some vehicles are not animals,True
+Some vehicles are automobiles,True
+Some canines are not cows,True
+No planes are warships,True
+No anguses are birds,True
+Some felines are siameses,True
+No winged animals are cats,True
+Some siameses are not felines,False
+No watercrafts are planes,True
+No birds are winged animals,False
+Some animals are not sedans,True
+Some dogs are labradors,True
+Some aircrafts are not planes,True
+All dogs are pooches,True
+Some planes are not cruisers,True
+All evergreens are pines,False
+Some animals are evergreens,True
+Some birds are not mammals,True
+No cows are dogs,True
+Some humans are flowers,False
+All blossoms are flowers,True
+Some evergreens are pines,True
+Some sedans are not vehicles,False
+Some animals are cars,False
+No cats are felines,False
+Some kitties are cats,True
+No dogs are felines,True
+All blossoms are plants,True
+Some cats are not labradors,True
+Some mammals are cattles,False
+All chickadees are birds,True
+No labradors are canines,False
+All cows are canines,False
+Some canines are cats,False
+All mortals are humans,True
+No cars are watercrafts,True
+All warships are boeings,False
+No warships are aircrafts,False
+Some humans are animals,True
+Some trees are perennials,True
+No daisies are plants,False
+Some humans are not flowers,True
+Some birds are chickadees,True
+All cattles are cows,False
+Some cruisers are not planes,True
+Some aircrafts are warships,False
+All battleships are warships,True
+All birdies are winged animals,True
+No flowers are humans,True
+No siameses are dogs,True
+No cars are sedans,False
+Some cats are not felines,False
+Some evergreens are not trees,False
+No warships are watercrafts,False
+No cats are birds,True
+No birds are cows,True
+Some daisies are plants,True
+No humans are mortals,False
+Some vehicles are animals,False
+No warships are boeings,False
+All trees are perennials,True
+Some cows are not mammals,False
+All warships are aircrafts,False
+All pines are evergreens,True
+All winged animals are birdies,False
+Some birds are birdies,False
+All creatures are animals,True
+No sedans are vehicles,False
+All plants are blossoms,False
+No vehicles are animals,True
+Some watercrafts are planes,False
+Some trees are evergreens,True
+Some canines are not dogs,True
+All siameses are dogs,False
+All canines are labradors,False
+Some dogs are pooches,True
+Some winged animals are not chickadees,True
+Some dogs are not cows,True
+All felines are kitties,True
+Some cats are not dogs,True
+Some mortals are animals,True
+Some chickadees are not cows,True
+All anguses are mammals,True
+Some warships are not cruisers,True
+Some mammals are not birds,True
+Some anguses are not mammals,False
+No plants are daisies,True
+Some cats are not birds,True
+Some mortals are not cars,True
+No animals are flowers,True
+All animals are plants,False
+All vehicles are sedans,False
+No pines are trees,False
+No evergreens are flowers,True
+No birds are cats,True
+All pooches are dogs,True
+All mammals are cows,False
+Some watercrafts are not cars,True
+Some aircrafts are not boeings,True
+All birds are cats,False
+No chickadees are winged animals,False
+Some mortals are not animals,True
+All cats are felines,True
+Some trees are animals,False
+No watercrafts are cars,True
+No mammals are birds,True
+Some blossoms are plants,True
+All airplanes are aircrafts,True
+No flowers are plants,False
+Some cows are not birds,True
+No felines are cats,False
+Some boeings are not warships,True
+Some evergreens are plants,True
+Some warships are cars,False
+Some vehicles are cars,True
+No felines are siameses,True
+Some cows are cattles,False
+Some cats are siameses,True
+Some planes are not watercrafts,True
+All flowers are trees,False
+Some daisies are not plants,False
+Some cruisers are warships,True
+All cars are watercrafts,False
+Some felines are kitties,True
+Some labradors are not cats,True
+Some cattles are mammals,True
+Some plants are not flowers,True
+All automobiles are vehicles,True
+All warships are battleships,False
+No cars are vehicles,False
+All chickadees are cows,False
+All vehicles are cars,False
+Some sedans are not cars,False
+No trees are animals,True
+Some evergreens are flowers,False
+No aircrafts are boeings,False
+All pines are trees,True
+Some flowers are not daisies,True
+Some flowers are not animals,True
+All canines are cats,False

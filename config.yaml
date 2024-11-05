@@ -1,0 +1,37 @@
+cache_dir : ""
+personal_dir : ""
+hf_key : ""
+eval_iterations : 5
+models :
+  pythia-160m : "EleutherAI/pythia-160m"
+  pythia-410m : "EleutherAI/pythia-410m"
+  pythia-1.4b : "EleutherAI/pythia-1.4b"
+  llama-2-7b : "meta-llama/Llama-2-7b-hf"
+  llama-2-7b-chat : "meta-llama/Llama-2-7b-chat-hf"
+  llama-2-13b : "meta-llama/Llama-2-13b-hf"
+  llama-2-13b-chat : "meta-llama/Llama-2-13b-chat-hf"
+  llama-3-8b : "meta-llama/Meta-Llama-3-8B"
+  llama-3-8b-chat : "meta-llama/Meta-Llama-3-8B-Instruct"
+  llama-3-70b : "meta-llama/Meta-Llama-3-70B"
+  llama-3-70b-chat : "meta-llama/Meta-Llama-3-70B-Instruct"
+training:
+  optim : 'adamw_torch'
+  learning_rate : !!float 5e-4
+  weight_decay : 0.01
+  gradient_accumulation_steps : 32
+  save_every_epoch : 10
+  max_new_tokens : 20
+  sequence_length : 500
+  micro_batch : 2
+  epochs : 101
+  lora:
+    r: 32
+    lora_alpha : 16
+    lora_dropout : 0.05
+    bias : "none"
+    task_type : "CAUSAL_LM"
+    target_modules:
+      llama-3-8b : "q_proj v_proj"
+      pythia-1.4b : "query_key_value dense"
+
+

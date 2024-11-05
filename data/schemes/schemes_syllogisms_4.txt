@@ -1,0 +1,112 @@
+<ID> AA1
+<STRUCTURE> Premise 1: All A are Z / Premise 2:  All Z are W / Premise 3:  All W are B / Premise 4: All B are C
+<CONCLUSION> All A are C | some A are C | some C are A
+####
+<ID> AA2
+<STRUCTURE> Premise 1: All B are Z / Premise 2:  All Z are W / Premise 3:  All W are A / Premise 4: All C are B
+<CONCLUSION> All C are A | some A are C | some C are A
+####
+<ID> AA3
+<STRUCTURE> Premise 1: All A are Z / Premise 2:  All Z are W / Premise 3:  All W are B / Premise 4: All C are B
+<CONCLUSION> Nothing follows
+####
+<ID> AA4
+<STRUCTURE> Premise 1: All B are Z / Premise 2:  All Z are W / Premise 3:  All W are A / Premise 4: All B are C
+<CONCLUSION> Some A are C | some C are A
+####
+<ID> AI1
+<STRUCTURE> Premise 1: All A are Z / Premise 2:  All Z are W / Premise 3:  All W are B / Premise 4: Some B are C
+<CONCLUSION> Nothing follows
+####
+<ID> AI2
+<STRUCTURE> Premise 1: All B are Z / Premise 2:  All Z are W / Premise 3:  All W are A / Premise 4: Some C are B
+<CONCLUSION> Some A are C | some C are A
+####
+<ID> AI3
+<STRUCTURE> Premise 1: All A are Z / Premise 2:  All Z are W / Premise 3:  All W are B / Premise 4: Some C are B
+<CONCLUSION> Nothing follows
+####
+<ID> AI4
+<STRUCTURE> Premise 1: All B are Z / Premise 2:  All Z are W / Premise 3:  All W are A / Premise 4: Some B are C
+<CONCLUSION> Some A are C | some C are A
+####
+<ID> AO1
+<STRUCTURE> Premise 1: All A are Z / Premise 2:  All Z are W / Premise 3:  All W are B / Premise 4: Some B are not C
+<CONCLUSION> Nothing follows
+####
+<ID> AO2
+<STRUCTURE> Premise 1: All B are Z / Premise 2:  All Z are W / Premise 3:  All W are A / Premise 4: Some C are not B
+<CONCLUSION> Nothing follows
+####
+<ID> AO3
+<STRUCTURE> Premise 1: All A are Z / Premise 2:  All Z are W / Premise 3:  All W are B / Premise 4: Some C are not B
+<CONCLUSION> Some C are not A
+####
+<ID> AO4
+<STRUCTURE> Premise 1: All B are Z / Premise 2:  All Z are W / Premise 3:  All W are A / Premise 4: Some B are not C
+<CONCLUSION> Some A are not C
+####
+<ID> AE1
+<STRUCTURE> Premise 1: All A are Z / Premise 2:  All Z are W / Premise 3:  All W are B / Premise 4: No B are C
+<CONCLUSION> No A are C | no C are A | some A are not C | some C are not A
+####
+<ID> AE2
+<STRUCTURE> Premise 1: All B are Z / Premise 2:  All Z are W / Premise 3:  All W are A / Premise 4: No C are B
+<CONCLUSION> Some A are not C
+####
+<ID> AE3
+<STRUCTURE> Premise 1: All A are Z / Premise 2:  All Z are W / Premise 3:  All W are B / Premise 4: No C are B
+<CONCLUSION> No A are C | no C are A | some A are not C | some C are not A
+####
+<ID> AE4
+<STRUCTURE> Premise 1: All B are Z / Premise 2:  All Z are W / Premise 3:  All W are A / Premise 4: No B are C
+<CONCLUSION> Some A are not C
+####
+<ID> IA1
+<STRUCTURE> Premise 1: Some A are B / Premise 2: All B are Z / Premise 3:  All Z are W / Premise 4:  All W are C
+<CONCLUSION> Some A are C | some C are A
+####
+<ID> IA2
+<STRUCTURE> Premise 1: Some B are A / Premise 2: All C are Z / Premise 3:  All Z are W / Premise 4:  All W are B
+<CONCLUSION> Nothing follows
+####
+<ID> IA3
+<STRUCTURE> Premise 1: Some A are B / Premise 2: All C are Z / Premise 3:  All Z are W / Premise 4:  All W are B
+<CONCLUSION> Nothing follows
+####
+<ID> IA4
+<STRUCTURE> Premise 1: Some B are A / Premise 2: All B are Z / Premise 3:  All Z are W / Premise 4:  All W are C
+<CONCLUSION> Some A are C | some C are A
+####
+<ID> OA1
+<STRUCTURE> Premise 1: Some A are not B / Premise 2: All B are Z / Premise 3:  All Z are W / Premise 4:  All W are C
+<CONCLUSION> Nothing follows
+####
+<ID> OA2
+<STRUCTURE> Premise 1: Some B are not A / Premise 2: All C are Z / Premise 3:  All Z are W / Premise 4:  All W are B
+<CONCLUSION> Nothing follows
+####
+<ID> OA3
+<STRUCTURE> Premise 1: Some A are not B / Premise 2: All C are Z / Premise 3:  All Z are W / Premise 4:  All W are B
+<CONCLUSION> Some A are not C
+####
+<ID> OA4
+<STRUCTURE> Premise 1: Some B are not A / Premise 2: All B are Z / Premise 3:  All Z are W / Premise 4:  All W are C
+<CONCLUSION> Some C are not A
+####
+<ID> EA1
+<STRUCTURE> Premise 1: No A are B / Premise 2: All B are Z / Premise 3:  All Z are W / Premise 4:  All W are C
+<CONCLUSION> Some C are not A
+####
+<ID> EA2
+<STRUCTURE> Premise 1: No B are A / Premise 2: All C are Z / Premise 3:  All Z are W / Premise 4:  All W are B
+<CONCLUSION> No A are C | no C are A | some A are not C | some C are not A
+####
+<ID> EA3
+<STRUCTURE> Premise 1: No A are B / Premise 2: All C are Z / Premise 3:  All Z are W / Premise 4:  All W are B
+<CONCLUSION> No A are C | no C are A | some A are not C | some C are not A
+####
+<ID> EA4
+<STRUCTURE> Premise 1: No B are A / Premise 2: All B are Z / Premise 3:  All Z are W / Premise 4:  All W are C
+<CONCLUSION> Some C are not A
+####
